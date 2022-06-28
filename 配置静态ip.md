@@ -13,7 +13,21 @@ NETMASK=255.255.255.0
 GATEWAY=192.168.42.2
 DNS=114.114.114.114
 ```
-3. 重启服务
+
+3. 检查DNS服务器地址设置
+
+打开文件`vim /etc/resolv.conf`, 若该文件内容为空，则新增内容如下:
+```
+nameserver 114.114.114.114
+```
+
+4. 重启服务
 ```
 systemctl restart network
+```
+
+5. 检查网络是否正常连接
+
+```
+ping -c 3 www.baidu.com
 ```
