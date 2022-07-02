@@ -61,6 +61,16 @@ Query OK, 0 rows affected (0.01 sec)
 mysql> set global validate_password_length=0;
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> set password for 'root'@'localhost'=password('123456');
+mysql> set password for 'root'@'%'=password('123456');
 Query OK, 0 rows affected, 1 warning (0.00 sec)
+```
+
+- 访问权限设置
+
+```
+mysql> grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0.01 sec)
 ```
