@@ -32,7 +32,7 @@ cron(Minutes Hours Day-of-month Month Day-of-week Year)
 我们可以通过以下[工具](https://www.bejson.com/othertools/cron/)对表达式进行验证
 
 
-
+[参考资料](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/crontab.html)
 
 
 
