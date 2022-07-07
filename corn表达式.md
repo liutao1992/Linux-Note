@@ -27,7 +27,7 @@ cron(Minutes Hours Day-of-month Month Day-of-week Year)
 ```
 0 0 4 1 * ?
 ```
-> 注意：因为Linux上的crontab不支持到秒，只能是分钟级，因此对于秒，我们补0即可
+> 注意：因为Linux上的crontab不支持到秒，只能是分钟级，因此对于秒，我们补0即可。该表达式中第一位我们补0
 
 我们可以通过以下[工具](https://www.bejson.com/othertools/cron/)对表达式进行验证
 
